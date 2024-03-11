@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 80px;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar h1{
+    font-size: 40px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #080808;
+    font-size: 15px;
+    transition: ease .40s;
+}
+nav ul li a:hover{
+    color: #8c9e6c;
+    transform: scale(1.1);
+    text-decoration: underline 2px;
+}
+
+/* ---------background-------- */
+.background{
+    width: 98%;
+    min-height: 100vh;
+    background-image: url(images/thought-catalog-505eectW54k.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.column{
+    padding-left: 20px;
+    padding-top: 250px; 
+
+}
+.column h1{
+    font-size: 50px;
+    color: #fff;
+}
+.column p{
+    padding-top: 15px;
+    font-size: 17px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #080808;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+}
+
+/* -----------blog-section------------ */
+.blog-section{
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+.blog-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.blog-content{
+    font-size: 17px;
+    font-weight: 100;
+    padding: 10px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.btn-2{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #f5f5f5;       
+    text-decoration: none;
+    background: rgba(3, 3, 3, 0.9);
+    text-transform: capitalize;
+}
+
+/* -------media query----- */
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 40%;
+        border-radius: 20px;
+        background: #8c9e6c;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #080808;
+    }
+    .menu{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .column{
+        align-items: center;
+        text-align: left;
+        padding-top: 100px;
+    }
+}

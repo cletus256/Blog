@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="text/javascript" src="style.js"></script>
+    <div class="container">
+        <div class="navbar">
+            <h1>RON</h1>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="/editor.html">Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+            <img src="images/bx-menu.svg" class="menu" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="column">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio  <br>deleniti accusamus nesciunt. Incidunt nihil error alias. Minima vel impedit <br> similique consequuntur cumque neque esse? Architecto repudiandae aspernatur enim quaerat repellendus.</p>
+            <a href="/editor.html" class="btn">write a blog</a>
+        </div>
+    </div>
+
+<!-------------------Newsfeed--------------->
+    <div class="blog-section">
+        <div class="blog-card">
+            <img src="images/prophsee-journals-vD9Gb_H7RR8.jpg" class="blog-img">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+            <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nesciunt qui at deserunt possimus cumque voluptas ullam voluptates ab nostrum commodi neque </p>
+            <a href="#" class="btn-2">Read</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                {
+                menuList.style.maxHeight = "130px";
+                 }
+            else
+                {
+                menuList.style.maxHeight = "0px";
+            }
+        }    
+    </script>
+
+</body>
+</html>
